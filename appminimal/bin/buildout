@@ -1,0 +1,12 @@
+#!/home/heleyna/.virtualenvs/buildoutfirst/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/home/heleyna/.virtualenvs/buildoutfirst/lib/python2.7/site-packages',
+  '/home/heleyna/Documents/django_buildoutexpt/appminimal/eggs/zc.buildout-2.3.1-py2.7.egg',
+  ]
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    sys.exit(zc.buildout.buildout.main())
